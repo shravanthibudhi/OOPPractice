@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+    
+    /*
+    * Creation of an object
+    */
+    let user = {
+        firstName: "John",
+        lastName: "Davis",
+        // functions
+        setPassword: (user,password) => {
+            user.password = password;
+        },
+        "user Hobbies": [
+            "soccer",
+            "vollyball"
+        ],
+        getFullName: (user) => {
+            return `${user.firstName} ${user.lastName}`;
+        }
+    }
+
+    // console.log(user)
+    // console.log(user.getFullName(user))
+
+    /*
+    * Accessing a property
+    */
+    // console.log(user.firstName)
+    // console.log(user["lastName"])
+    // console.log(user["user Hobbies"])
+
+    /*
+    * Check if property exists
+    */
+
+    // if("firstName" in user) {
+    //     console.log("First name exists")
+    // }
+
+    // if("randomAttr" in user) {
+    //     console.log("randomAttr exists")
+    // } else {
+    //     console.log("randomAttr does not exists")
+    // }
+
+    /* 
+    * Looping through objects
+    */ 
+
+    // for (let prop in user) { // "in" iterates through the keys of the object; "of" is used to iterate through a list
+    //     console.log(user[prop]); // finding a key that has a certain variable replaced with a string
+    // }
+
+    </script>
+</body>
+</html>
