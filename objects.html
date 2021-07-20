@@ -10,6 +10,43 @@
     <script>
     
     /*
+    * Creation of a class
+    */
+   class User {
+       constructor(firstName, lastName, userHobbies){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.userHobbies = userHobbies;
+       }
+
+       getFullName = () => {
+            return `${this.firstName} ${this.lastName}`;
+       }
+   }
+
+    //    let John = new User("John", "Davis", ["soccer", "vollyball"])
+    //    console.log(John)
+    //    console.log(John.getFullName())
+
+    //    let Shravanthi = new User("Shravanthi", "Budhi", ["hiking", "photography"])
+    //    console.log(Shravanthi)
+    //    console.log(Shravanthi.getFullName())
+
+    /*
+    * Class inheritance
+    */
+    class AdminUser extends User {
+        setPassword = (password) => {
+            this.password = password;
+        }
+    }
+
+    // let John = new User("John", "Davis", ["soccer", "vollyball"])
+    // console.log(John)
+    // let Shravanthi = new AdminUser("Shravanthi", "Budhi", ["hiking", "photography"])
+    // console.log(Shravanthi)
+
+    /*
     * Creation of an object
     */
     let user = {
